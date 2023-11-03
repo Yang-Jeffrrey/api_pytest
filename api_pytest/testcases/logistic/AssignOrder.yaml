@@ -1,0 +1,17 @@
+- baseInfo:
+    api_name: 集团分配物流公司
+    url: /api/order/pc/order/assign
+    method: post
+    header:
+      Content-Type: application/json;charset=UTF-8
+    cookies:
+      ${get_extract_data(Cookie)}
+  testCase:
+    - case_name: 集团分配物流公司
+      json:
+        orderId: ${get_extract_data(orderId)}
+        orgId: 4140913758110176843
+      validation:
+        - contains: { 'message': '操作成功' }
+
+

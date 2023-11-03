@@ -1,0 +1,13 @@
+INFO     common.recordlog:conftest.py:10 ----------------------接口测试开始--------------------
+INFO     common.recordlog:sendrequests.py:43 接口名称:删除用户
+INFO     common.recordlog:sendrequests.py:44 接口请求地址:http://127.0.0.1:8787/dar/user/deleteUser
+INFO     common.recordlog:sendrequests.py:45 测试用例名称:无效删除用户
+INFO     common.recordlog:sendrequests.py:46 请求头:{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'}
+INFO     common.recordlog:sendrequests.py:47 cookie:None
+INFO     common.recordlog:sendrequests.py:51 请求参数{'data': {'user_id': 1212718219298}}
+INFO     common.recordlog:sendrequests.py:28 接口返回信息：{"msg":"删除失败，用户id不存在!","msg_code":9001}
+
+INFO     common.recordlog:assertion.py:109 yaml文件的预期结果:[{'contains': {'msg': '删除失败'}}]
+INFO     common.recordlog:assertion.py:35 字符串包含断言成功：预期结果[删除失败],实际结果[删除失败，用户id不存在!]
+INFO     common.recordlog:assertion.py:130 测试成功
+INFO     common.recordlog:conftest.py:12 ----------------------接口测试结束--------------------

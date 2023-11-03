@@ -1,0 +1,14 @@
+INFO     common.recordlog:conftest.py:10 ----------------------接口测试开始--------------------
+INFO     common.recordlog:sendrequests.py:43 接口名称:集团分配物流公司
+INFO     common.recordlog:sendrequests.py:44 接口请求地址:http://127.0.0.1:8787/api/order/pc/order/assign
+INFO     common.recordlog:sendrequests.py:45 测试用例名称:集团分配物流公司
+INFO     common.recordlog:sendrequests.py:46 请求头:{'Content-Type': 'application/json;charset=UTF-8'}
+INFO     common.recordlog:sendrequests.py:47 cookie:{'access_token_cookie': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5ODk1ODc1MiwianRpIjoiMTU4MTA3ZDUtODUyOS00NzViLTg1MmMtMTU2ODk0NmNmMTNhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImV4YW1wbGVfdXNlciIsIm5iZiI6MTY5ODk1ODc1MiwiZXhwIjoxNjk4OTU5NjUyfQ.PHsCKVls1dP2dYs9gB5ci0Lh613epICukfe1JgwICSY'}
+INFO     common.recordlog:sendrequests.py:54 请求参数{'json': {'orderId': 'DD20231102202112317', 'orgId': '4140913758110176843'}}
+INFO     common.recordlog:sendrequests.py:28 接口返回信息：{"code":90000,"message":"订单id或组织id不存在"}
+
+INFO     common.recordlog:assertion.py:109 yaml文件的预期结果:[{'contains': {'message': '操作成功'}}]
+ERROR    common.recordlog:assertion.py:40 contains断言失败：预期结果为[操作成功]，实际结果为[订单id或组织id不存在]
+ERROR    common.recordlog:assertion.py:133 测试失败
+ERROR    common.recordlog:apiutil.py:112
+INFO     common.recordlog:conftest.py:12 ----------------------接口测试结束--------------------

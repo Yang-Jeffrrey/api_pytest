@@ -1,0 +1,15 @@
+INFO     common.recordlog:test_debug_api.py:14 环境初始化...
+INFO     common.recordlog:conftest.py:10 ----------------------接口测试开始--------------------
+INFO     common.recordlog:sendrequests.py:43 接口名称:用户查询
+INFO     common.recordlog:sendrequests.py:44 接口请求地址:http://127.0.0.1:8787/dar/user/queryUser
+INFO     common.recordlog:sendrequests.py:45 测试用例名称:有效查询用户
+INFO     common.recordlog:sendrequests.py:46 请求头:{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'}
+INFO     common.recordlog:sendrequests.py:47 cookie:None
+INFO     common.recordlog:sendrequests.py:51 请求参数{'data': {'user_id': 123839387391912}}
+INFO     common.recordlog:sendrequests.py:28 接口返回信息：{"error_code":null,"msg":"查询成功!","msg_code":200}
+
+INFO     common.recordlog:assertion.py:109 yaml文件的预期结果:[{'contains': {'msg': '查询成功'}}]
+INFO     common.recordlog:assertion.py:35 字符串包含断言成功：预期结果[查询成功],实际结果[查询成功!]
+INFO     common.recordlog:assertion.py:130 测试成功
+INFO     common.recordlog:conftest.py:12 ----------------------接口测试结束--------------------
+INFO     common.recordlog:test_debug_api.py:50 正在清理测试数据...

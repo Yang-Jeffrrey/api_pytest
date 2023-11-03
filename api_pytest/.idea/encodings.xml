@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/base/apiutil.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/debugtalk.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/operyaml.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/run.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/testcases/publicApi/addUser.yaml" charset="UTF-8" />
+  </component>
+</project>
